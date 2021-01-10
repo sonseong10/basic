@@ -1,2 +1,3 @@
-# basic
- Basic HTML5, CSS3, Vanilla JS Projects
+# Basic Projects
+
+Basic HTML5, CSS3, Vanilla JS Projects
