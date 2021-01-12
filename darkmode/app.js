@@ -9,4 +9,5 @@ modeBtn.addEventListener("click", () => {
     body.classList.add("dark")
     modeBtn.textContent = "White"
   }
+  modeBtn.blur()
 })
