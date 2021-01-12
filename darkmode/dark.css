@@ -1,0 +1,12 @@
+body.dark {
+  background-color: #111111;
+}
+
+body.dark .card {
+  background-color: #1d1d1d;
+}
+
+body.dark .content--writer,
+body.dark .content--rating {
+  color: #fff;
+}
