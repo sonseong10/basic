@@ -73,3 +73,52 @@ body {
   display: flex;
   align-items: center;
 }
+
+/* card--left */
+.wapper--img {
+  position: relative;
+  margin-right: 10px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.wapper--img > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* card--right */
+.card--content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content--writer {
+  float: left;
+  font-size: 14px;
+  color: #1d1d1d;
+}
+
+.content--rating {
+  float: right;
+  color: #1d1d1d;
+  font-size: 18px;
+}
+
+.content--rating::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  background-image: url("./img/star.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content--desc {
+  float: left;
+  color: #555;
+  font-size: 14px;
+}
