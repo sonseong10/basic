@@ -26,3 +26,16 @@ a:visited {
   height: 100vh;
   background-color: #fcfcfc;
 }
+
+header,
+.gnb {
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3em 2em;
+  width: 1000px;
+  background-color: #fff;
+}
