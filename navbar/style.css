@@ -96,7 +96,7 @@ header > a > strong {
   transition: all 300ms linear;
 }
 
-.gnb li > a:hover + .dropdown {
+.show {
   max-height: 200px;
   z-index: 1;
 }
