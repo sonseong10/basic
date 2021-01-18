@@ -10,6 +10,10 @@
 }
 
 /* slider */
+body {
+  background-color: #111216;
+}
+
 .slider {
   position: relative;
 }
@@ -23,11 +27,16 @@
   line-height: 400px;
   color: #fafafa;
   font-size: 32px;
+  opacity: 0;
+  transition: all 400ms linear;
+  transform: scale(0.7);
   text-align: center;
 }
 
 .slider--img.visible {
+  opacity: 1;
   z-index: 1;
+  transform: none;
 }
 
 .slider--img:nth-child(odd) {
