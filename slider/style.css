@@ -13,16 +13,19 @@
 .slider {
   width: 100%;
 }
-.silder--img {
+
+.slider--img {
   height: 400px;
   line-height: 400px;
   color: #fafafa;
   font-size: 32px;
   text-align: center;
 }
-.silder--img:nth-child(odd) {
+
+.slider--img:nth-child(odd) {
   background-color: #061d95;
 }
-.silder--img:nth-child(even) {
+
+.slider--img:nth-child(even) {
   background-color: #0066ff;
 }
