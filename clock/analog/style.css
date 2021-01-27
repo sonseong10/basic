@@ -30,7 +30,28 @@ body {
   height: 30rem;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.3),
     inset 4px 8px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
+
+.clock::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 120px;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+  z-index: 100;
+  transition: all 500ms;
+  transform: rotate(-45deg) translateX(-180px);
+}
+
+.clock:hover::after {
+  transform: rotate(-45deg) translateX(700px);
+}
+
 .clock-face {
   position: relative;
   background-image: url("clock.png");
