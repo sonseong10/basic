@@ -7,10 +7,10 @@ function setDate() {
   const now = new Date()
 
   const seconds = now.getSeconds()
-  if (seconds <= 59) {
-    const secondsDegrees = (seconds / 60) * 360
-    secondHand.style.transform = `rotate(${secondsDegrees}deg)`
-  }
+  const secondsDegrees = (seconds / 60) * 360
+  seconds <= 59
+    ? (secondHand.style.transform = `rotate(${secondsDegrees}deg)`)
+    : new Error("fail")
 
   const minutes = now.getMinutes()
   const minutesDegrees = (minutes / 60) * 360
