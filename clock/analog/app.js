@@ -1,0 +1,24 @@
+const secondHand = document.querySelector(".second")
+const minuteHand = document.querySelector(".minute")
+const hourHand = document.querySelector(".hour")
+
+// get seconds, minutes, hours based on computer's time
+function setDate() {
+  const now = new Date()
+
+  const seconds = now.getSeconds()
+  if (seconds <= 59) {
+    const secondsDegrees = (seconds / 60) * 360
+    secondHand.style.transform = `rotate(${secondsDegrees}deg)`
+  }
+
+  const minutes = now.getMinutes()
+  const minutesDegrees = (minutes / 60) * 360
+  minuteHand.style.transform = `rotate(${minutesDegrees}deg)`
+
+  const hours = now.getHours()
+  const hoursDegrees = (hours / 12) * 360
+  hourHand.style.transform = `rotate(${hoursDegrees}deg)`
+}
+
+setInterval(setDate, 0)
