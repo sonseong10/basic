@@ -38,3 +38,55 @@ body {
   background-position: center;
   height: 100%;
 }
+
+.clock::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: #f82626;
+  border-radius: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+}
+
+.hand {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  transform-origin: 100%;
+  transition: all 1s;
+}
+
+.hour {
+  height: 20%;
+  left: 48.75%;
+  top: 30%;
+  transform-origin: 50% 100%;
+  width: 2.5%;
+  background-color: #8bc34a;
+}
+
+.minute {
+  height: 40%;
+  left: 49%;
+  top: 10%;
+  transform-origin: 50% 100%;
+  width: 2%;
+  background-color: #03a9f4;
+}
+
+.second {
+  height: 45%;
+  left: 49.5%;
+  top: 14%;
+  transform-origin: 50% 80%;
+  width: 1%;
+  z-index: 8;
+  background-color: #f82626;
+}
