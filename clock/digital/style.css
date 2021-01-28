@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+::selection {
+  background-color: #1d1d1d;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #e9e9e9;
+  color: #777;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+}
