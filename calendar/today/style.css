@@ -22,6 +22,7 @@ body {
   color: #1d1d1d;
   text-align: center;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+  font-family: "Roboto", sans-serif;
 }
 
 .today::after {
