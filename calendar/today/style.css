@@ -17,4 +17,54 @@ body {
   max-width: 280px;
 }
 
+.today {
+  position: relative;
+  color: #1d1d1d;
+  text-align: center;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.today::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 20%;
+  top: 28%;
+  width: 4px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+}
+
+.today::before {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 20%;
+  top: 28%;
+  width: 4px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+}
+
+.today .today__header-wrap {
+  padding: 10px 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #ffc92c;
+}
+
+.today .today__body-wrap {
+  padding: 30px 50px;
+  background-color: #f1f1f1;
+}
+
+.today-year,
+.today-day {
+  font-weight: 400;
+}
+
+.today-date {
+  font-size: 52px;
 }
