@@ -12,33 +12,22 @@ function autoSlide() {
   if (currentImg) {
     currentImg.classList.remove(VISIBLE)
     const nextImg = currentImg.nextElementSibling
-    if (nextImg) {
-      nextImg.classList.add(VISIBLE)
-    } else {
-      firstImg.classList.add(VISIBLE)
-    }
+    nextImg ? nextImg.classList.add(VISIBLE) : firstImg.classList.add(VISIBLE)
   } else {
     firstImg.classList.add(VISIBLE)
   }
-}
 
-function autoState() {
-  const currentDot = document.querySelector(`.${SHOW}`)
-  if (currentDot) {
-    currentDot.classList.remove(SHOW)
-    const nextDot = currentDot.nextElementSibling
-    if (nextDot) {
-      nextDot.classList.add(SHOW)
+  function autoState() {
+    const currentDot = document.querySelector(`.${SHOW}`)
+    if (currentDot) {
+      currentDot.classList.remove(SHOW)
+      const nextDot = currentDot.nextElementSibling
+      nextDot ? nextDot.classList.add(SHOW) : firstDot.classList.add(SHOW)
     } else {
       firstDot.classList.add(SHOW)
     }
-  } else {
-    firstDot.classList.add(SHOW)
   }
+  autoState()
 }
 
-autoSlide()
 setInterval(autoSlide, 3000)
-
-autoState()
-setInterval(autoState, 3000)
