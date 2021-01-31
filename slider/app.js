@@ -1,5 +1,6 @@
 const VISIBLE = "visible"
 const SHOW = "show"
+const DELAY = 3000 // 3000 = 3s
 
 const firstImg = document.querySelector(".slider--img")
 const firstDot = document.querySelector(".slider--dot")
@@ -30,4 +31,4 @@ function autoSlide() {
   autoState()
 }
 
-setInterval(autoSlide, 3000)
+setInterval(autoSlide, DELAY)
