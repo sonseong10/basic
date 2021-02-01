@@ -95,15 +95,13 @@ ul li {
   position: relative;
   display: flex;
   list-style: none;
-  height: 100%;
-  width: 100vw;
-  transition: all 750ms ease;
+  transition: all 0.5s ease;
   left: 0;
 }
 
 .slide--item {
-  min-width: 100vw;
   float: left;
+  min-width: 100vw;
   overflow: hidden;
 }
 
