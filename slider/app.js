@@ -1,3 +1,4 @@
+// auto slider
 const VISIBLE = "visible"
 const SHOW = "show"
 const DELAY = 3000 // 3000 = 3s
@@ -33,6 +34,7 @@ function autoSlide() {
 
 setInterval(autoSlide, DELAY)
 
+// btn controll slider
 const slider = document.querySelector("#slider")
 const slideList = document.querySelector("#slide--wrap")
 let index = 1
