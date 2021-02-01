@@ -91,7 +91,7 @@ ul li {
   overflow: hidden;
 }
 
-ul {
+#slide--wrap {
   position: relative;
   display: flex;
   list-style: none;
