@@ -9,12 +9,14 @@
   font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 
-/* slider */
 body {
   background-color: #eeeeee;
 }
 
-.slider {
+ul li {
+  list-style: none;
+}
+
   position: relative;
   height: 300px;
   margin-bottom: 12px;
