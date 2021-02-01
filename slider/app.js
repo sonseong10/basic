@@ -32,3 +32,52 @@ function autoSlide() {
 }
 
 setInterval(autoSlide, DELAY)
+
+const slider = document.querySelector("#slider")
+const slideList = document.querySelector("#slide--wrap")
+let index = 1
+
+const responsiveSlider = function () {
+  const prev = document.querySelector("#prev")
+  const next = document.querySelector("#next")
+
+  let items = slideList.querySelectorAll(".slide--item").length
+  let sliderWidth = slider.offsetWidth
+
+  window.addEventListener("resize", () => {
+    sliderWidth = slider.offsetWidth
+  })
+
+  const prevSlide = () => {
+    if (index > 1) {
+      index = index - 2 // prve slide--item
+      slideList.style.left = `${-index * sliderWidth}px`
+    } else if (index === 1) {
+      index = items - 1 // last slide--item
+      slideList.style.left = `${-index * sliderWidth}px`
+    }
+    index++
+  }
+
+  const nextSlide = () => {
+    if (index < items) {
+      slideList.style.left = `${-index * sliderWidth}px`
+      index++
+    } else if (index === items) {
+      slideList.style.left = `0px`
+      index = 1
+    }
+  }
+
+  next.addEventListener("click", nextSlide)
+  prev.addEventListener("click", prevSlide)
+
+  setInterval(nextSlide, DELAY)
+}
+
+window.addEventListener("resize", () => {
+  sliderWidth = slider.offsetWidth
+  slideList.style.left = `${-index * sliderWidth}px`
+})
+
+window.onload = responsiveSlider()
