@@ -102,6 +102,10 @@ ul li {
 .slide--item {
   float: left;
   min-width: 100vw;
+  font-size: 32px;
+  line-height: 300px;
+  text-align: center;
+  color: #fff;
   overflow: hidden;
 }
 
