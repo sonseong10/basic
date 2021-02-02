@@ -18,3 +18,115 @@ html {
   background-color: #1d1d1d;
   color: #eee;
 }
+
+.calendar {
+  width: 45rem;
+  height: 52rem;
+  background-color: #1f1f22;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.calender__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  width: 100%;
+  height: 12rem;
+  background-color: #ffc92c;
+  text-align: center;
+}
+
+.calender__container .btn {
+  border: none;
+  background-color: initial;
+  font-size: 2.5rem;
+  color: #666;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.calender__container .btn:hover,
+.calender__container .btn:focus {
+  color: #1d1d1d;
+}
+
+.calender__container--month {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #1d1d1d;
+}
+
+.calender__container--today {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #000;
+}
+
+.week {
+  display: flex;
+  align-items: center;
+  padding: 0 0.4rem;
+}
+
+.week div {
+  letter-spacing: 0.1rem;
+  width: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.week > div {
+  padding: 1rem;
+
+  font-size: 1.5rem;
+  transition: background-color 300ms;
+}
+
+.week > .sun:hover {
+  background-color: #ff4949;
+}
+
+.week > div:hover {
+  background-color: #666;
+}
+
+.week > .sat:hover {
+  background-color: #0066ff;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: 5.7rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.today {
+  border-radius: 5px;
+  background-color: #ffc92c;
+  font-weight: 700;
+  color: #000;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border-radius: 5px;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
