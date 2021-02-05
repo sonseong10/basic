@@ -3,9 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather</title>
   </head>
   <body>
+    <article class="wrapper">
+      <section class="weather">
+        <div class="weather--title">
+          <h1 class="weather--location">Seoul</h1>
+        </div>
+        <div class="weather--img"></div>
+        <strong class="weather--state">Clean</strong>
+        <dl class="weather--decs">
+          <dt class="screen-out">Temp</dt>
+          <dd>
+            <strong id="temp" class="num">10</strong>
+            <span class="weather--sign">°C</span>
+          </dd>
+          <dt class="screen-out">Humidity</dt>
+          <dd>
+            <strong id="humidity" class="num">10</strong>
+            <span class="weather--sign">RH</span>
+          </dd>
+        </dl>
+      </section>
+    </article>
     <script src="app.js"></script>
   </body>
 </html>
