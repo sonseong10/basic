@@ -74,7 +74,9 @@ body {
 
 .weather--state {
   margin-bottom: 1em;
+  font-weight: 400;
   font-size: 1.34rem;
+  color: #333;
   text-transform: uppercase;
 }
 
