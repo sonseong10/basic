@@ -6,3 +6,27 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+.screen-out {
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  width: 1px;
+  height: 1px;
+  z-index: -100;
+  opacity: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to top, #19161b 20%, #232333 100%);
+}
+
