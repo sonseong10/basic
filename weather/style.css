@@ -30,3 +30,70 @@ body {
   background-image: linear-gradient(to top, #19161b 20%, #232333 100%);
 }
 
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 0.5s;
+  -webkit-box-reflect: below 6px
+    linear-gradient(transparent, transparent, #0004);
+}
+
+.weather:hover {
+  box-shadow: -2px 2px 24px rgba(255, 255, 255, 0.7);
+}
+
+.weather--title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.4em;
+  font-size: 1.4rem;
+  color: #1d1d1d;
+}
+
+.weather--title::before {
+  content: "";
+  margin-right: 0.4em;
+  width: 20px;
+  height: 20px;
+  background: no-repeat center/contain url("./map-marker-alt-solid.png");
+}
+
+.weather--img {
+  margin-bottom: 0.8em;
+  width: 14rem;
+  height: 14rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.weather--state {
+  margin-bottom: 1em;
+  font-size: 1.34rem;
+  text-transform: uppercase;
+}
+
+.weather--decs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-weight: 700;
+}
+
+#temp.cold {
+  color: #0066ff;
+}
+
+.num {
+  font-size: 1.8rem;
+}
+
+.weather--sign {
+  font-size: 1.4rem;
+}
