@@ -9,31 +9,62 @@ function getWeather(lat, lon) {
       return response.json()
     })
     .then(function (json) {
-      console.log(json)
+      console.log(json) // JSON 데이터 확인용
+      const icon = json.weather[0].icon
+      const state = json.weather[0].description
+      const location = json.name
+      const temp = json.main.temp
+      const humidity = json.main.humidity
+
+      selectIcon(icon)
+      printWeather(humidity, location, state, temp)
     })
+}
+
+function selectIcon(icon) {
+  const URL = `http://openweathermap.org/img/wn/${icon}@2x.png`
+  document.querySelector(
+    ".weather--img"
+  ).style.backgroundImage = `url("${URL}")`
+}
+
+function printWeather(humidity, location, state, temp) {
+  document.querySelector(".weather--location").textContent = location
+  document.querySelector(".weather--state").textContent = state
+  document.querySelector("#humidity").textContent = humidity
+
+  lowTemp(temp)
+}
+
+function lowTemp(temp) {
+  const tempText = document.querySelector("#temp")
+  temp <= 0 ? tempText.classList.add("cold") : tempText.classList.remove("cold")
+  tempText.textContent = temp
+}
+
+function handleGeoSuccess(position) {
+  const coordsObj = {
+    latitude: latitude,
+    longitude: longitude,
+  }
+
+  saveCoords(coordsObj)
+  const latitude = position.coords.latitude
+  const longitude = position.coords.longitude
+
+  getWeather(latitude, longitude)
 }
 
 function saveCoords(coordsObj) {
   localStorage.setItem(COORDS, JSON.stringify(coordsObj))
 }
 
-function handleGeoSuccess(position) {
-  const latitude = position.coords.latitude
-  const longitude = position.coords.longitude
-  const coordsObj = {
-    latitude: latitude,
-    longitude: longitude,
-  }
-  saveCoords(coordsObj)
-  getWeather(latitude, longitude)
-}
-
-function handleGeoError() {
+function handleError() {
   console.log("Can't access geo location")
 }
 
 function askForCoords() {
-  navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoError)
+  navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleError)
 }
 
 function loadCoords() {
