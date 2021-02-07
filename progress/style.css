@@ -53,3 +53,24 @@ h2 {
   max-width: 1024px;
   height: 100vh;
 }
+
+/* card */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 2rem;
+  min-width: 240px;
+  height: 320px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.card:not(:last-child) {
+  margin-right: 24px;
+}
+
