@@ -195,5 +195,22 @@ h2 {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card:first-child {
+    margin-right: 32px;
+  }
 }
 
+@media screen and (max-width: 520px) {
+  .card:first-child {
+    margin-right: 0;
+  }
+
+  .card:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
