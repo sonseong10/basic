@@ -74,3 +74,78 @@ h2 {
   margin-right: 24px;
 }
 
+.horizontal {
+  margin-bottom: 12px;
+  width: 100%;
+  height: 2em;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+}
+
+.horizontal .value-bar {
+  width: 0%;
+  height: 2em;
+  border-radius: 10px;
+  background-color: #0fa9f1;
+}
+
+.donut {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: initial;
+  transform: scale(2);
+  overflow: hidden;
+}
+
+.donut .inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+.donut .progress {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #dfdfdf;
+  border-radius: 50%;
+  clip: rect(0, 100px, 100px, 50px);
+}
+
+.donut .progress .value-bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  clip: rect(0, 50px, 100px, 0);
+  background-color: #0ff16a;
+}
+
+.donut .right {
+  transform: rotate(180deg);
+}
+
+
+.vertical {
+  margin-bottom: 8px;
+  width: 2em;
+  height: 160px;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+}
+
+.vertical .value-bar {
+  height: 0%;
+  border-radius: 10px;
+  background: linear-gradient(to top, rgb(37, 196, 50), rgb(169, 235, 82));
+}
+
