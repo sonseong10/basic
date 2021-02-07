@@ -87,6 +87,17 @@ h2 {
   height: 2em;
   border-radius: 10px;
   background-color: #0fa9f1;
+  animation: left 4s linear infinite both;
+}
+
+@keyframes left {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
 }
 
 .donut {
@@ -130,10 +141,34 @@ h2 {
   background-color: #0ff16a;
 }
 
+.donut .left .value-bar {
+  animation: down 2s linear both;
+}
+
+@keyframes down {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+
 .donut .right {
   transform: rotate(180deg);
 }
 
+.donut .right .value-bar {
+  animation: up 2s linear both;
+  animation-delay: 2s;
+}
+
+@keyframes up {
+  to {
+    transform: rotate(180deg);
+  }
+}
 
 .vertical {
   margin-bottom: 8px;
@@ -147,5 +182,18 @@ h2 {
   height: 0%;
   border-radius: 10px;
   background: linear-gradient(to top, rgb(37, 196, 50), rgb(169, 235, 82));
+  animation: top 4s ease-in both;
+}
+
+@keyframes top {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
 }
 
