@@ -117,6 +117,11 @@ html {
   transition: all 0.2s;
 }
 
+.days div.prev-date,
+.days div.next-date {
+  color: #666;
+}
+
 .today {
   border-radius: 5px;
   background-color: #ffc92c;
