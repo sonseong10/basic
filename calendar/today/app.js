@@ -1,5 +1,6 @@
 const now = new Date()
-const monthArray = new Array(
+
+const monthArray = [
   "January",
   "February",
   "March",
@@ -11,9 +12,9 @@ const monthArray = new Array(
   "September",
   "October",
   "November",
-  "December"
-)
-const dayArray = new Array("Sun", "Mon", "Tus", "Wed", "Thu", "Fri", "Sat")
+  "December",
+]
+const dayArray = ["Sun", "Mon", "Tus", "Wed", "Thu", "Fri", "Sat"]
 
 document.querySelector(".today-year").textContent = now.getFullYear()
 
