@@ -23,3 +23,28 @@ button {
   cursor: pointer;
 }
 
+.btn-area {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 50px;
+  top: 30px;
+}
+
+.move_btn {
+  margin-bottom: 14px;
+  background-color: #fcfcfc;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1d1d1d;
+  transition: color 300ms linear;
+}
+
+.move_btn:hover {
+  color: #ff3838;
+}
+
+.move_btn:nth-child(3):hover {
+  color: #00ff99;
+}
+
