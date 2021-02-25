@@ -13,3 +13,109 @@ body {
   font-size: 62.5%;
 }
 
+/* Box */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  padding: 0 1.6rem;
+  background-color: #fafafa;
+}
+
+header {
+  padding: 0.2rem 0.4rem;
+}
+
+header::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 54%;
+  height: 1px;
+  background-color: #666;
+}
+
+/* Form */
+.todo-form {
+  display: flex;
+  background-color: #e7e7ea;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input[type="text"] {
+  flex-grow: 2;
+  border: none;
+  padding: 2px 4px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px #f1f1f1 inset;
+}
+
+/* Font */
+h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #1d1d1d;
+  text-align: center;
+}
+
+.todo-desc {
+  flex-grow: 2;
+  font-size: 1.4rem;
+  color: #1d1d1d;
+  max-width: 240px;
+  word-break: break-all;
+  margin-right: 12px;
+}
+
+/* List */
+ul {
+  padding-left: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow: auto;
+}
+
+ul::-webkit-scrollbar {
+  width: 6px;
+}
+ul::-webkit-scrollbar-thumb {
+  background-color: #8094b4;
+  border-radius: 10px;
+}
+ul::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #f1f1f1;
+  list-style: none;
+}
+
+/* Button */
+button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: initial;
+  cursor: pointer;
+}
+
+.delete-btn {
+  border: 1px solid #ebebeb;
+  color: #666;
+}
+
+.todo-submit {
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #1d1d1d;
+}
