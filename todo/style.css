@@ -48,6 +48,7 @@ header::after {
 
 input[type="text"] {
   flex-grow: 2;
+  margin-right: 6px;
   border: none;
   padding: 2px 4px;
   border-radius: 5px;
@@ -69,6 +70,7 @@ h1 {
   max-width: 240px;
   word-break: break-all;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .todo-desc.finish {
@@ -111,6 +113,7 @@ button {
   border-radius: 5px;
   background-color: initial;
   cursor: pointer;
+  transition: all 0.4s;
 }
 
 .delete-btn {
@@ -118,9 +121,20 @@ button {
   color: #666;
 }
 
+.delete-btn:hover,
+.delete-btn:focus {
+  border-color: #1d1d1d;
+  color: #1d1d1d;
+}
+
 .todo-submit {
   padding: 0.4rem 0.8rem;
   border-radius: 5px;
   font-weight: 700;
   color: #1d1d1d;
+}
+
+.todo-submit:hover,
+.todo-submit:focus {
+  background-color: rgb(173, 245, 115);
 }
