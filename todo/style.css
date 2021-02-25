@@ -71,6 +71,11 @@ h1 {
   margin-right: 12px;
 }
 
+.todo-desc.finish {
+  text-decoration: line-through;
+  color: #666;
+}
+
 /* List */
 ul {
   padding-left: 0;
