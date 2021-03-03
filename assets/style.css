@@ -1,0 +1,175 @@
+/* setting CSS */
+* {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #fcfcfc;
+  color: #1d1d1d;
+}
+
+/* list */
+dl {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+dd {
+  margin-left: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* text */
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+abbr {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* container CSS */
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+.hader-info {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  margin-bottom: 32px;
+}
+
+.img-container {
+  width: 180px;
+  margin-right: 14px;
+}
+
+.profile {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+}
+
+.screen-out {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: -999px;
+  opacity: 0;
+  top: -999px;
+}
+
+.nickname {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.occupation {
+  font-size: 14px;
+  color: #666;
+}
+
+.tool-list {
+  display: flex;
+}
+
+.tool-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.intro,
+.projects {
+  padding: 16px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.tool-name {
+  padding: 2px 6px;
+  border-radius: 2px;
+  background-color: #efefef;
+  font-size: 14px;
+  color: #666;
+}
+
+.tool-item:not(:last-child) .tool-name {
+  margin-right: 8px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 14px 12px;
+  border-radius: 5px;
+  min-width: 640px;
+  color: #666;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.project:hover {
+  background-color: #fff;
+  color: #1d1d1d;
+  box-shadow: 2px 2px 6px #eeee;
+}
+
+.section-title {
+  font-size: 24px;
+}
+
+.project-number {
+  font-weight: 700;
+  flex-basis: 10%;
+}
+
+.project-title {
+  margin: 0;
+  font-weight: 400;
+  flex-basis: 80%;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  color: #999;
+  font-weight: 300;
+  padding: 2em 0;
+}
+
+@media screen and (max-width: 760px) {
+  .projects-list .project-card {
+    min-width: 100%;
+  }
+
+  .projects-list .project {
+    min-width: auto;
+  }
+  .project-number {
+    flex-basis: 28%;
+  }
+  .project-title {
+    flex-basis: 50%;
+  }
+}
