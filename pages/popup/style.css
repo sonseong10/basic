@@ -101,3 +101,10 @@ body {
     transform: scale(1.2);
   }
 }
+
+@media screen and (max-width: 760px) {
+  .popup {
+    padding: 30px;
+    max-width: 80%;
+  }
+}

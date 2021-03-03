@@ -66,7 +66,8 @@ body {
 /* card */
 .card {
   padding: 12px 30px 12px 20px;
-  max-width: 520px;
+  max-width: 80%;
+  margin: 0 auto;
   border-radius: 5px;
   background-color: #fff;
   transition: box-shadow 300ms linear;
@@ -108,7 +109,7 @@ body {
 
 .content--writer {
   float: left;
-  font-size: 14px;
+  font-size: 18px;
   color: #1d1d1d;
 }
 
@@ -132,4 +133,14 @@ body {
   float: left;
   color: #555;
   font-size: 14px;
+}
+
+@media screen and (max-width: 760px) {
+  .card {
+    max-width: 300px;
+  }
+
+  .content--writer {
+    font-size: 16px;
+  }
 }

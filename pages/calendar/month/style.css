@@ -135,3 +135,55 @@ html {
   border: 0.2rem solid #777;
   cursor: pointer;
 }
+
+@media screen and (max-width: 760px) {
+  .calendar {
+    width: 30rem;
+    height: 47rem;
+  }
+
+  .week {
+    position: fixed;
+    flex-direction: column;
+  }
+
+  .week div {
+    letter-spacing: 0.1rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .week > div {
+    padding: 1.24rem;
+    font-size: 1.5rem;
+    transition: background-color 300ms;
+  }
+
+  .days {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+    overflow-y: scroll;
+    height: 70%;
+  }
+
+  .days::-webkit-scrollbar {
+    width: 6px;
+  }
+  .days::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+  }
+  .days::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  .days div {
+    margin: 0 0.3rem;
+    height: 4.64rem;
+  }
+}
