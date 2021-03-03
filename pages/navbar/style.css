@@ -122,4 +122,8 @@ header > a > strong {
   header {
     flex-direction: column;
   }
+
+  .gnb li > .menu {
+    padding: 0 10px;
+  }
 }
