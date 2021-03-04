@@ -9,6 +9,11 @@
   font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 
+html,
+body {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #eeeeee;
 }
@@ -19,12 +24,12 @@ ul li {
 
 /*auto slider*/
 .auto--slider {
-  margin-bottom: 32px;
+  margin-bottom: 3.2em;
 }
 .auto--slider .slider {
   position: relative;
-  height: 300px;
-  margin-bottom: 12px;
+  height: 50em;
+  margin-bottom: 1.2em;
 }
 
 .auto--slider .slider .slider--img {
@@ -32,9 +37,9 @@ ul li {
   top: 0;
   left: 0;
   width: 100%;
-  line-height: 300px;
+  line-height: 9.4em;
   color: #fafafa;
-  font-size: 32px;
+  font-size: 3.2rem;
   opacity: 0;
   transition: all 400ms linear;
   text-align: center;
@@ -60,19 +65,19 @@ ul li {
 }
 
 .slider--dot {
-  width: 18px;
-  height: 18px;
+  width: 2.2em;
+  height: 2.2em;
   border-radius: 50%;
   background-color: #999;
 }
 
 .slider--dot:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 1.4em;
 }
 
 .slider--dot.show {
-  width: 20px;
-  height: 20px;
+  width: 2.2em;
+  height: 2.2em;
 }
 
 .slider--dot:nth-child(odd).show {
@@ -87,7 +92,7 @@ ul li {
 #slider {
   position: relative;
   width: 100vw;
-  height: 300px;
+  height: 50em;
   overflow: hidden;
 }
 
@@ -102,8 +107,8 @@ ul li {
 .slide--item {
   float: left;
   min-width: 100vw;
-  font-size: 32px;
-  line-height: 300px;
+  font-size: 3.2rem;
+  line-height: 9.4em;
   text-align: center;
   color: #fff;
   overflow: hidden;
@@ -122,10 +127,10 @@ ul li {
   top: 50%;
   padding: 0.2em 0.6em;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.2em;
   background-color: rgba(255, 255, 255, 0.2);
   color: #1d1d1d;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   transform: translateY(-50%);
   transition: all 300ms ease;
@@ -140,9 +145,9 @@ ul li {
 }
 
 #prev {
-  left: 12px;
+  left: 1.2em;
 }
 
 #next {
-  right: 12px;
+  right: 1.2em;
 }

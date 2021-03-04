@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-h1 {
-  color: #777;
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -18,6 +13,11 @@ body {
   align-items: center;
   min-height: 100vh;
   background: #ececec;
+}
+
+h1 {
+  color: #777;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 
 .clock {

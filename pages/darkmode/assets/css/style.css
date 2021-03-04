@@ -9,6 +9,20 @@
   outline: none;
 }
 
+html,
+body {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ff3838;
+}
+
 li {
   padding-left: 0;
   list-style: none;
@@ -22,28 +36,19 @@ a {
   text-decoration: none;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #ff3838;
-}
-
 .main--title {
-  margin: 10px 0;
-  font-size: 32px;
+  margin: 0.1em 0;
+  font-size: 3.2rem;
   color: #fff;
 }
 
 #mode--btn {
-  margin: 10px 0;
-  padding: 4px 20px;
+  margin: 1em 0;
+  padding: 0.4em 2em;
   border: none;
-  border-radius: 5px;
+  border-radius: 5em;
   background-color: #1d1d1d;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #fff;
   font-weight: 500;
   transition: box-shadow 300ms linear;
@@ -78,7 +83,7 @@ body {
 }
 
 .card:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 3.2em;
 }
 
 .card > a[data-value] {
@@ -89,8 +94,8 @@ body {
 /* card--left */
 .wapper--img {
   position: relative;
-  margin-right: 10px;
-  width: 200px;
+  margin-right: 1em;
+  width: 20em;
   border-radius: 50%;
 }
 
@@ -109,20 +114,20 @@ body {
 
 .content--writer {
   float: left;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #1d1d1d;
 }
 
 .content--rating {
   float: right;
   color: #1d1d1d;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .content--rating::before {
   content: "";
   display: inline-block;
-  width: 13px;
+  width: 12px;
   height: 12px;
   background-image: url("../img/star.png");
   background-size: cover;
@@ -132,12 +137,16 @@ body {
 .content--desc {
   float: left;
   color: #555;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 760px) {
   .card {
-    max-width: 300px;
+    max-width: 46em;
+  }
+
+  .wapper--img {
+    width: 64em;
   }
 
   .content--writer {

@@ -9,9 +9,9 @@
   font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 
-button[type="button"] {
-  border: none;
-  cursor: pointer;
+html,
+body {
+  font-size: 62.5%;
 }
 
 body {
@@ -21,6 +21,11 @@ body {
   align-items: center;
   height: 100vh;
   background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+}
+
+button[type="button"] {
+  border: none;
+  cursor: pointer;
 }
 
 /* button */
@@ -79,12 +84,14 @@ body {
 }
 
 .popup--title {
-  margin-bottom: 24px;
+  margin-bottom: 1.2em;
+  font-size: 1.8rem;
   color: #1d1d1d;
 }
 
 .popup--desc {
-  margin-bottom: 18px;
+  margin-bottom: 1.8em;
+  font-size: 1.6rem;
   color: #666;
 }
 

@@ -4,7 +4,12 @@
 }
 
 ::selection {
-  background-color: #1d1d1d;
+  background-color: #d1d1d1;
+}
+
+html,
+body {
+  font-size: 62.5%;
 }
 
 body {
@@ -19,8 +24,12 @@ body {
   color: #777;
 }
 
+h1 {
+  font-size: 2.8rem;
+}
+
 h2 {
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -30,18 +39,17 @@ h2 {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-
-  font-size: 50px;
+  font-size: 5.2rem;
 }
 
 strong {
   display: block;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 0.2em;
+  padding: 2rem;
   box-shadow: 3px 3px 9px #bfbfbf, -3px -5px 9px #ffffff;
   user-select: none;
 }
 
 .card:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 0.4em;
 }

@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
   background-color: #fcfcfc;
   color: #1d1d1d;
 }
@@ -15,7 +19,7 @@ body {
 /* list */
 dl {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 3.2em;
 }
 
 dd {
@@ -34,27 +38,35 @@ h3 {
   font-weight: 400;
 }
 
+p {
+  font-size: 1.4rem;
+}
+
 abbr {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
+}
+
+em {
+  font-size: 1.4rem;
 }
 
 /* container CSS */
 .container {
-  max-width: 1340px;
+  max-width: 216em;
   margin: 0 auto;
 }
 
 .hader-info {
   display: flex;
   align-items: center;
-  padding-top: 100px;
-  margin-bottom: 32px;
+  padding-top: 10em;
+  margin-bottom: 3.2em;
 }
 
 .img-container {
-  width: 180px;
-  margin-right: 14px;
+  width: 28em;
+  margin-right: 1.4em;
 }
 
 .profile {
@@ -66,20 +78,20 @@ abbr {
 
 .screen-out {
   position: absolute;
+  left: -999px;
+  top: -999px;
   width: 1px;
   height: 1px;
-  left: -999px;
   opacity: 0;
-  top: -999px;
 }
 
 .nickname {
-  font-size: 24px;
-  margin-bottom: 8px;
+  font-size: 2.4rem;
+  margin-bottom: 0.8em;
 }
 
 .occupation {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #666;
 }
 
@@ -89,8 +101,8 @@ abbr {
 
 .tool-title {
   margin: 0;
-  margin-bottom: 8px;
-  font-size: 18px;
+  margin-bottom: 0.8em;
+  font-size: 1.8rem;
 }
 
 .intro,
@@ -100,15 +112,16 @@ abbr {
 }
 
 .tool-name {
-  padding: 2px 6px;
-  border-radius: 2px;
+  padding: 0.2em 0.6em;
+  border-radius: 0.2em;
   background-color: #efefef;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #666;
+  text-align: center;
 }
 
 .tool-item:not(:last-child) .tool-name {
-  margin-right: 8px;
+  margin-right: 0.8em;
 }
 
 .projects-list {
@@ -120,10 +133,11 @@ abbr {
 .project {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 24px;
-  padding: 14px 12px;
-  border-radius: 5px;
-  min-width: 640px;
+  align-items: center;
+  margin-bottom: 2.4em;
+  padding: 1.4em 1.2em;
+  border-radius: 0.5em;
+  min-width: 100em;
   color: #666;
   transition: all 0.3s;
   text-decoration: none;
@@ -136,7 +150,7 @@ abbr {
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .project-number {
@@ -148,7 +162,7 @@ abbr {
   margin: 0;
   font-weight: 400;
   flex-basis: 80%;
-  font-size: 16px;
+  font-size: 1.4rem;
 }
 
 footer {
@@ -159,6 +173,11 @@ footer {
 }
 
 @media screen and (max-width: 760px) {
+  .hader-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .projects-list .project-card {
     min-width: 100%;
   }
@@ -166,9 +185,11 @@ footer {
   .projects-list .project {
     min-width: auto;
   }
+
   .project-number {
     flex-basis: 28%;
   }
+
   .project-title {
     flex-basis: 50%;
   }

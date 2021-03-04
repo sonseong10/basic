@@ -33,7 +33,8 @@ header::after {
   display: block;
   margin: 0 auto;
   width: 54%;
-  height: 1px;
+  height: 1.4px;
+  border-radius: 6em;
   background-color: #666;
 }
 
@@ -42,16 +43,16 @@ header::after {
   display: flex;
   background-color: #e7e7ea;
   padding: 0.4rem 0.6rem;
-  border-radius: 5px;
+  border-radius: 0.8em;
   text-align: center;
 }
 
 input[type="text"] {
   flex-grow: 2;
-  margin-right: 6px;
+  margin-right: 0.4em;
   border: none;
-  padding: 2px 4px;
-  border-radius: 5px;
+  padding: 0.4em 0.6em;
+  border-radius: 0.4em;
   box-shadow: 1px 1px 8px #f1f1f1 inset;
 }
 
@@ -67,9 +68,9 @@ h1 {
   flex-grow: 2;
   font-size: 1.4rem;
   color: #1d1d1d;
-  max-width: 240px;
+  max-width: 20em;
   word-break: break-all;
-  margin-right: 12px;
+  margin-right: 1.2em;
   cursor: pointer;
 }
 
@@ -82,27 +83,27 @@ h1 {
 ul {
   padding-left: 0;
   margin: 0;
-  max-height: 300px;
+  max-height: 60em;
   overflow: auto;
 }
 
 ul::-webkit-scrollbar {
-  width: 6px;
+  width: 1.2em;
 }
 ul::-webkit-scrollbar-thumb {
   background-color: #8094b4;
-  border-radius: 10px;
+  border-radius: 6em;
 }
 ul::-webkit-scrollbar-track {
   background-color: grey;
-  border-radius: 10px;
+  border-radius: 6em;
 }
 
 li {
   display: flex;
   align-items: center;
   padding: 1rem;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 0.26em solid #f1f1f1;
   list-style: none;
 }
 
@@ -110,7 +111,7 @@ li {
 button {
   padding: 0.4rem 0.8rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.4em;
   background-color: initial;
   cursor: pointer;
   transition: all 0.4s;
@@ -129,12 +130,12 @@ button {
 
 .todo-submit {
   padding: 0.4rem 0.8rem;
-  border-radius: 5px;
+  border-radius: 0.4em;
   font-weight: 700;
   color: #1d1d1d;
 }
 
 .todo-submit:hover,
 .todo-submit:focus {
-  background-color: rgb(173, 245, 115);
+  background-color: #3be780;
 }
