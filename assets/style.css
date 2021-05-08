@@ -1,24 +1,23 @@
 /* setting CSS */
 * {
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-html,
-body {
+html {
   font-size: 62.5%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: #fcfcfc;
-  color: #1d1d1d;
 }
 
 /* list */
 dl {
-  margin: 0;
   margin-bottom: 3.2em;
 }
 
@@ -27,67 +26,56 @@ dd {
 }
 
 ul {
-  margin: 0;
   padding-left: 0;
   list-style: none;
 }
 
 /* text */
-h3 {
-  margin: 0;
-  font-weight: 400;
-}
-
-p {
-  font-size: 1.4rem;
-}
-
 abbr {
+  display: block;
+  margin-bottom: 12px;
   font-size: 2.4rem;
   font-weight: 700;
-}
-
-em {
-  font-size: 1.4rem;
+  color: #1d1d1d;
 }
 
 /* container CSS */
 .container {
-  max-width: 216em;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
 .hader-info {
   display: flex;
   align-items: center;
-  padding-top: 10em;
-  margin-bottom: 3.2em;
+  justify-content: flex-start;
+  margin: 2em 0;
 }
 
 .img-container {
-  width: 28em;
   margin-right: 1.4em;
+  width: 180px;
 }
 
 .profile {
+  display: block;
   width: 100%;
   height: auto;
   border-radius: 50%;
-  display: block;
 }
 
 .screen-out {
   position: absolute;
-  left: -999px;
-  top: -999px;
   width: 1px;
   height: 1px;
   opacity: 0;
+  z-index: -100;
 }
 
 .nickname {
-  font-size: 2.4rem;
   margin-bottom: 0.8em;
+  font-size: 2.4rem;
+  color: #1d1d1d;
 }
 
 .occupation {
@@ -97,18 +85,25 @@ em {
 
 .tool-list {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .tool-title {
-  margin: 0;
   margin-bottom: 0.8em;
   font-size: 1.8rem;
+  color: #1d1d1d;
 }
 
+/* intro */
 .intro,
 .projects {
   padding: 16px;
   border-bottom: 1px solid #ebebeb;
+}
+
+.intro p {
+  font-size: 1.4rem;
 }
 
 .tool-name {
@@ -127,17 +122,22 @@ em {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+}
+
+.project-card {
+  margin-bottom: 12px;
 }
 
 .project {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.4em;
+  justify-content: space-around;
   padding: 1.4em 1.2em;
   border-radius: 0.5em;
-  min-width: 100em;
+  min-width: 500px;
+  font-size: 1.4rem;
   color: #666;
   transition: all 0.3s;
   text-decoration: none;
@@ -146,7 +146,7 @@ em {
 .project:hover {
   background-color: #fff;
   color: #1d1d1d;
-  box-shadow: 2px 2px 6px #eeee;
+  box-shadow: 2px 2px 8px #00000011;
 }
 
 .section-title {
@@ -154,22 +154,18 @@ em {
 }
 
 .project-number {
-  font-weight: 700;
-  flex-basis: 10%;
+  margin-right: 32px;
 }
 
 .project-title {
-  margin: 0;
-  font-weight: 400;
   flex-basis: 80%;
-  font-size: 1.4rem;
 }
 
 footer {
-  text-align: center;
-  color: #999;
-  font-weight: 300;
   padding: 2em 0;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #666;
 }
 
 @media screen and (max-width: 760px) {
@@ -178,16 +174,9 @@ footer {
     justify-content: center;
   }
 
-  .projects-list .project-card {
+  .project-card,
+  .project {
     min-width: 100%;
-  }
-
-  .projects-list .project {
-    min-width: auto;
-  }
-
-  .project-number {
-    flex-basis: 28%;
   }
 
   .project-title {
